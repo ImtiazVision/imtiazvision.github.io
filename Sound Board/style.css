@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("images/background.jpg");
+  /* height: 500px; */
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  /* position: relative; */
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  /* add flex wrap so they go on to the next line  */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* we add text align to center  */
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.btn {
+  /* background-color: rgb(7, 53, 105); */
+  background-color: #60808F;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  margin: 1.1rem;
+  padding: .9rem 3rem;
+  font-size: 1.5rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  opacity: 0.9; /* when we hover over the button, opacity will change the color of the button (i.e. make it light/dark in color depending on the range(0-1). 0.1 is extremely light whereas 0.9 is dark (close to original given color of the button) */
+}

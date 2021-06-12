@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* navbar */
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar {
+    background:rgb(224, 62, 95) ;
+    width: 100%;
+    padding: 15px 0;
+    position: fixed;
+    font-family: 'ubuntu', sans-serif;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a {
+    color:#fff ;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+
+/* home section */
+
+.home {
+    display: flex;
+    background: url("../img/computer.jpeg") no-repeat center;
+    height: 100vh;
+    color: rgba(255, 255, 255, 0.973);
+}
