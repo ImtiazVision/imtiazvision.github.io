@@ -76,10 +76,10 @@ li a {
         bottom: 0;
         z-index: 5;
         /* Added section for practice*/
-        padding-top: 150px;
-        padding-bottom: 200px;
-        text-align: center;
-        font-size: 1em;
+/*         padding-top: 150px; */
+/*         padding-bottom: 200px; */
+/*         text-align: center; */
+/*         font-size: 1em; */
     }
 
     ul {
