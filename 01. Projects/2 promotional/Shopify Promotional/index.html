@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopify Promotional</title>
+  </head>
+  <style type="text/css">
+    table {
+      table-layout: fixed !important;
+    }
+    /* MEDIA QUERIES */
+    /* DESKTOP SIZE */
+    @media only screen and (min-width: 960px) {
+      .container {
+        max-width: 600px;
+      }
+    }
+
+    /* MID-SIZE/TABLET/IPAD */
+    @media only screen and (max-width: 960px) {
+      .container {
+        width: 600px;
+      }
+    }
+    /* MOBILE/IPHONE/ANDROID */
+    @media only screen and (max-width: 600px) {
+      .container {
+        width: 100%;
+      }
+      .banner-column {
+        width: 100% !important;
+        display: inline-block !important;
+        /* max-width:  300px!important; */
+        text-align: center !important;
+      }
+
+      .shopify-logo-mobile {
+        width: 234px !important;
+      }
+      .button {
+        text-align: center !important;
+        padding-bottom: 18px !important;
+      }
+      .button-mobile {
+        padding: 10px 15px !important;
+      }
+      .hero-img-mobile {
+        width: 100% !important;
+      }
+
+      .column {
+        width: 100% !important;
+        display: inline-block;
+        text-align: center;
+      }
+      .outer-column {
+        text-align: center !important;
+        width: 100% !important;
+      }
+      .column,
+      .cta {
+        width: 100% !important;
+        /* max-width: 400px !important; */
+        text-align: center !important;
+      }
+      .column,
+      .graph {
+        max-width: 186px !important;
+        width: 100% !important;
+        /* text-align: center !important; */
+      }
+      .column,
+      .second {
+        width: 100% !important;
+        max-width: 400px !important;
+
+        font-size: 40px !important;
+      }
+      .column.last {
+        max-width: 300px !important;
+        width: 100% !important;
+      }
+      .pad_tb_zero {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+      }
+      .two-columns {
+        text-align: center !important;
+      }
+
+      /* .quote {
+        padding-left: 15px !important;
+      } */
+      .quote-img {
+        padding: 4px 0px 20px 0px !important;
+      }
+
+      /* FOOTER SECTION  */
+      /* .nav {
+        text-align: center !important;
+      } */
+      .each-nav {
+        width: 100% !important;
+        display: inline-block;
+      }
+    }
+
+    /* MOBILE/IPHONE/ANDROID */
+    @media only screen and (max-width: 550px) {
+      .quote_width_70 {
+        width: 70% !important;
+      }
+      .mobile_headline {
+        font-size: 50px !important;
+        line-height: 54px !important;
+      }
+    }
+
+    /* MOBILE/IPHONE/ANDROID */
+    @media only screen and (max-width: 500px) {
+      .quote_width_75 {
+        width: 75% !important;
+      }
+      .mobile_headline {
+        font-size: 48px !important;
+        line-height: 52px !important;
+      }
+    }
+
+    /* MOBILE/IPHONE/ANDROID */
+    @media only screen and (max-width: 450px) {
+      .quote_width_80 {
+        width: 80% !important;
+      }
+      .mobile_headline {
+        font-size: 45px !important;
+        line-height: 49px !important;
+      }
+    }
+
+    /* MOBILE/IPHONE/ANDROID */
+    @media only screen and (max-width: 420px) {
+      .mobile_headline {
+        font-size: 43px !important;
+        line-height: 47px !important;
+      }
+      .sell_header_cta {
+        font-size: 20px !important;
+        line-height: 1.5 !important;
+      }
+    }
+    /* MOBILE/IPHONE/ANDROID */
+    @media only screen and (max-width: 400px) {
+      .quote_width_85 {
+        width: 85% !important;
+      }
+      .mobile_headline {
+        font-size: 40px !important;
+        line-height: 44px !important;
+      }
+    }
+
+    /* EXTRA SMALL DEVICES */
+    @media only screen and (max-width: 380px) {
+      .mobile_headline {
+        font-size: 38px !important;
+        line-height: 42px !important;
+      }
+
+      .customize_sub_head {
+        font-size: 20px !important;
+        line-height: 1.5 !important;
+      }
+      /* FOOTER SECTION  */
+
+      /* .nav {
+        padding: 0 !important;
+        text-align: center !important;
+      } */
+      /* .each-nav {
+        width: 100% !important;
+        display: inline-block;
+      } */
+
+      /* .quote {
+        padding-left: 32px !important;
+      } */
+      /* .quote-img {
+        padding: 0 !important;
+      } */
+    }
+
+
+    /* EXTRA SMALL DEVICES */
+    @media only screen and (max-width: 350px) {
+      .quote_width_90 {
+        width: 90% !important;
+      }
+      .mobile_headline {
+        font-size: 35px !important;
+        line-height: 39px !important;
+      }
+    }
+
+    /* EXTRA SMALL DEVICES */
+    @media only screen and (max-width: 330px) {
+      .mobile_headline {
+        font-size: 33px !important;
+        line-height: 37px !important;
+      }
+    }
+
+    /* EXTRA EXTRA SMALL DEVICES/ APPLE WATCH  */
+    @media only screen and (max-width: 310px) {
+      /* .quote {
+        padding-left: 20px !important;
+      } */
+      .mobile_headline {
+        font-size: 32px !important;
+        line-height: 36px !important;
+      }
+    }
+
+    /* EXTRA SMALL DEVICES */
+    @media only screen and (max-width: 300px) {
+      .quote_width_95 {
+        width: 95% !important;
+      }
+      .mobile_headline {
+        font-size: 30px !important;
+        line-height: 34px !important;
+      }
+      .button_font_14 {
+        font-size: 14px !important;
+      }
+    }
+
+    /* EXTRA SMALL DEVICES */
+    @media only screen and (max-width: 220px) {
+      .pad_lr_zero {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+    }
+  </style>
+
+  <body style="background-color: #cccccc">
+    <!-- ========>> START: EMAIL <<========= -->
+    <table
+      align="center"
+      width="100%"
+      border="0"
+      cellspacing="0"
+      cellpadding="0"
+      role="presentation"
+    >
+      <tr>
+        <td>
+          <!-- ========>> START: EMAIL CONTAINER <<========= -->
+          <table
+            align="center"
+            width="600"
+            border="0"
+            cellspacing="0"
+            cellpadding="0"
+            role="presentation"
+            class="container"
+            style="background-color: #ffffff; padding-bottom: 10px"
+          >
+            <!-- ========>> START: ROW 1 BANNER <<========= -->
+            <tr>
+              <td>
+                <table
+                  width="100%"
+                  align="center"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  role="presentation"
+                  style="
+                    border: 1px solid;
+                    padding-bottom: 10px;
+                    padding-top: 10px;
+                    background-color: #000;
+                  "
+                >
+                  <!-- ========>> START: CONTENT <<========= -->
+                  <tr>
+                    <!-- START: COLUMN 1 -->
+                    <td style="width: 50%" class="banner-column">
+                      <table
+                        width="100%"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="border: 0px solid"
+                      >
+                        <tr>
+                          <td>
+                            <a href="#"
+                              ><img
+                                class="shopify-logo-mobile"
+                                src="https://i.ibb.co/TgNB6jJ/logo.png"
+                                alt="Shopify Logo"
+                                width="155"
+                                style="max-width: 100%; height: auto"
+                            /></a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <!-- END: COLUMN 1 -->
+
+                    <!-- START: COLUMN 2 -->
+                    <td style="width: 50%" class="banner-column">
+                      <table
+                        width="100%"
+                        align="right"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="border: 0px solid"
+                      >
+                        <tr>
+                          <td
+                            class="button"
+                            style="
+                              text-align: right;
+                              font-family: Arial, Helvetica, sans-serif;
+                              padding-right: 10px;
+                            "
+                          >
+                            <a
+                              class="button-mobile"
+                              style="
+                                text-decoration: none;
+                                color: #fff;
+                                padding: 12px 20px;
+                                border: 2px solid #eaeaea;
+                                border-radius: 30px;
+                              "
+                              href="#"
+                              >Log in</a
+                            >
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <!-- END: COLUMN 2 -->
+                  </tr>
+                  <!-- ========>> END: CONTENT <<========= -->
+                </table>
+              </td>
+            </tr>
+            <!-- ========>> END: ROW 1 BANNER <<========= -->
+
+            <!-- ========>> START: ROW 2 HERO IMAGE <<========= -->
+            <tr>
+              <td>
+                <table
+                  width="100%"
+                  align="center"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  role="presentation"
+                >
+                  <tr>
+                    <td
+                      align="center"
+                      background="https://i.ibb.co/CQCFd4S/background-img.png"
+                      style="
+                        background-size: 600px 300px;
+                        background-repeat: no-repeat;
+                      "
+                      bgcolor="#ffffff"
+                    >
+                      <a href="#"
+                        ><img
+                          src="https://i.ibb.co/k4yBCxW/hero.png"
+                          alt="hero image"
+                          class="hero-img-mobile"
+                          width="373"
+                      /></a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- ========>> END: ROW 2 HERO IMAGE <<========= -->
+
+            <!-- ========>> START: ROW 3 BODY PARAGRAPH & BUTTON <<========= -->
+            <tr>
+              <td>
+                <table
+                  width="100%"
+                  align="center"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  role="presentation"
+                >
+                  <!-- ========>> START: TABLE WIDTH 70% <<========= -->
+                  <tr>
+                    <td>
+                      <table
+                        width="70%"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="border: 0px solid"
+                        style="padding-bottom: 20px"
+                      >
+                        <!-- START: HEADLINE/ BODY/ BUTTON  -->
+                        <tr>
+                          <td style="text-align: center">
+                            <!-- START: HEADLINE  -->
+                            <p
+                              class="mobile_headline"
+                              style="
+                                margin: 0;
+                                font-size: 60px;
+                                line-height: 64px;
+                                font-family: Arial, Helvetica, sans-serif;
+                                padding-bottom: 20px;
+                              "
+                            >
+                              Make your ideas a reality
+                            </p>
+                            <!-- END: HEADLINE  -->
+
+                            <!-- START: BODY -->
+                            <p
+                              style="
+                                margin: 0;
+                                font-family: Arial, Helvetica, sans-serif;
+                                color: #423f3f;
+                                line-height: 24px;
+                                padding-bottom: 20px;
+                              "
+                            >
+                              Becoming an entrepreneur doesn't require money,
+                              luck, or a background in business. All it takes is
+                              a little creativity and a lot of ambition.
+                            </p>
+
+                            <p
+                              style="
+                                margin: 0;
+                                font-family: Arial, Helvetica, sans-serif;
+                                color: #423f3f;
+                                line-height: 24px;
+                              "
+                            >
+                              Find out how Shopify can help you grow your
+                              business, whether you're an established brand or
+                              just starting out.
+                            </p>
+                            <!-- END: BODY  -->
+
+                            <!-- START: BUTTON  -->
+                            <tr>
+                              <td
+                                style="
+                                  text-align: center;
+                                  padding-top: 20px;
+                                  padding-bottom: 40px;
+                                "
+                              >
+                                <a
+                                  href="https://www.example.com/"
+                                  target="_blank"
+                                  class="button-mobile button_font_14"
+                                  style="
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                    line-height: 24px;
+                                    font-family: Arial, Helvetica, sans-serif;
+                                    color: #ffffff;
+                                    text-decoration: none;
+                                    border-radius: 30px;
+                                    -webkit-border-radius: 30px;
+                                    background-color: #000000;
+                                    padding: 10px 20px;
+                                    display: inline-block;
+                                    border: 2px solid;
+                                  "
+                                  >Explore ways to sell</a
+                                >
+                              </td>
+                            </tr>
+                            <!-- END: BUTTON  -->
+                          </td>
+                        </tr>
+                        <!-- START: HEADLINE/ BODY/ BUTTON  -->
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- ========>> END: TABLE WIDTH 70% <<========= -->
+                </table>
+              </td>
+            </tr>
+            <!-- ========>> END: ROW 3 BODY PARAGRAPH & BUTTON <<========= -->
+
+            <!-- ========>> START: ROW 4 BODY IMAGE <<========= -->
+            <tr>
+              <td>
+                <table
+                  width="100%"
+                  align="center"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  role="presentation"
+                >
+                  <!-- ========>> START: TABLE WIDTH 94% <<========= -->
+                  <tr>
+                    <td>
+                      <table
+                        width="94%"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="border: 0px solid"
+                      >
+                        <tr>
+                          <td>
+                            <a href="#"
+                              ><img
+                                class="body-image-mobile"
+                                src="https://i.ibb.co/Lnrshs1/body.png"
+                                alt="body image"
+                                width="100%"
+                            /></a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- ========>> END: TABLE WIDTH 94% <<========= -->
+                </table>
+              </td>
+            </tr>
+            <!-- ========>> END: ROW 4 BODY IMAGE <<========= -->
+
+            <!-- ========>> START: ROW 5 CUSTOMIZE YOUR STYLE TABLE <<========= -->
+            <tr>
+              <td style="padding-top: 10px; padding-bottom: 40px">
+                <table
+                  width="100%"
+                  align="center"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  role="presentation"
+                >
+                  <!-- ========>> START: TABLE WIDTH 70% <<========= -->
+                  <tr>
+                    <td>
+                      <table
+                        width="70%"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="border: 0px solid"
+                        style="padding-bottom: 20px"
+                      >
+                        <!-- START: HEADLINE/ BODY -->
+                        <tr>
+                          <td style="text-align: center; padding-top: 20px">
+                            <!-- START: HEADLINE  -->
+                            <p
+                              class="customize_sub_head"
+                              style="
+                                margin: 0;
+                                font-size: 24px;
+                                font-weight: bold;
+                                line-height: 36px;
+                                font-family: Arial, Helvetica, sans-serif;
+                                padding-bottom: 20px;
+                              "
+                            >
+                              Customize your store
+                            </p>
+                            <!-- END: HEADLINE  -->
+
+                            <!-- START: BODY -->
+                            <p
+                              style="
+                                margin: 0;
+                                font-family: Arial, Helvetica, sans-serif;
+                                color: #423f3f;
+                                line-height: 24px;
+                                padding-bottom: 20px;
+                              "
+                            >
+                              <a
+                                href="#"
+                                style="color: #423f3f; font-weight: bold"
+                                >Explore our collection of free and paid
+                                themes</a
+                              >
+                              to find the right look and feel for your store.
+                              Get inspired, discover styles, and build the
+                              perfect look for your brand.
+                            </p>
+
+                            <!-- END: BODY  -->
+                          </td>
+                        </tr>
+                        <!-- START: HEADLINE/ BODY  -->
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- ========>> END: TABLE WIDTH 70% <<========= -->
+                </table>
+              </td>
+            </tr>
+            <!-- ========>> END: ROW 5 CUSTOMIZE YOUR STYLE TABLE <<========= -->
+
+            <!-- ========>> START: ROW 6 2 COLUMNS QUOTATION <<========= -->
+            <tr>
+              <td>
+                <table
+                  width="100%"
+                  align="center"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  role="presentation"
+                  style="border: 0px solid white; background-color: #1d1e1e"
+                >
+                  <!-- ========>> START: INNER TABLE WIDTH 65% <<========= -->
+                  <tr>
+                    <td style="padding-top: 40px">
+                      <table
+                        class="quote_width_95 quote_width_90 quote_width_85 quote_width_80 quote_width_75 quote_width_70"
+                        width="65%"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="border: 0px solid white"
+                      >
+                        <!-- ========>> START: CONTENT <<========= -->
+                        <tr>
+                          <td>
+                            <table
+                              width="100%"
+                              align="center"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              role="presentation"
+                            >
+                              <tr>
+                                <!-- ========>> START: LEFT COLUMN 15% <<========= -->
+                                <td width="21.50%" valign="top">
+                                  <table
+                                    width="76.35%"
+                                    align="center"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    role="presentation"
+                                    style="border: 0px solid white"
+                                  >
+                                    <tr>
+                                      <td
+                                        class="quote-img"
+                                        style="padding: 4px 0px 20px 0px"
+                                      >
+                                        <a href="#"
+                                          ><img
+                                            src="https://i.ibb.co/Brx7sMR/quote.png"
+                                            alt="quote"
+                                            width="64"
+                                            height="45"
+                                            style="max-width: 100%; height: auto;"
+                                        /></a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <!-- ========>> END: LEFT COLUMN 15% <<========= -->
+
+                                <!-- ========>> START: RIGHT COLUMN <<========= -->
+                                <td width="78.50%">
+                                  <table
+                                    width="93.67%"
+                                    align="center"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    role="presentation"
+                                    style="border: 0px solid white"
+                                  >
+                                    <tr>
+                                      <td
+                                        class="quote"
+                                        style="padding: 0px 0px 40px 0px"
+                                      >
+                                        <h3
+                                          style="
+                                            margin: 0;
+                                            color: #ffffff;
+                                            text-align: left;
+                                            line-height: 24px;
+                                            margin-bottom: 20px;
+                                            font-size: 16px;
+                                            font-family: Arial, Helvetica,
+                                              sans-serif;
+                                          "
+                                        >
+                                          "We’ve been able to build something in
+                                          3 years that a lot of brands haven’t
+                                          actually gotten to in 10 years."
+                                        </h3>
+
+                                        <p
+                                          style="
+                                            margin: 0;
+                                            color: #fff;
+                                            font-size: 12px;
+                                            line-height: 18px;
+                                            font-family: Arial, Helvetica,
+                                              sans-serif;
+                                            font-weight: 400;
+                                          "
+                                        >
+                                          <strong>Chioma</strong> <br />
+                                          Cee Cee’s Closet
+                                        </p>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <!-- ========>> END: RIGHT COLUMN <<========= -->
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- ========>> END: CONTENT <<========= -->
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- ========>> END: INNER TABLE WIDTH 65% <<========= -->
+                </table>
+              </td>
+            </tr>
+            <!-- ========>> END: ROW 6 2 COLUMNS QUOTATION <<========= -->
+
+            <!-- ========>> START: ROW 7 2 COLUMNS GRAPH <<========= -->
+            <tr>
+              <td>
+                <table
+                  width="100%"
+                  align="center"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  role="presentation"
+                  style="border: 0px solid; background-color: #eff6f9"
+                >
+                  <!-- ========>> START: TABLE WIDTH 80% <<========= -->
+                  <tr>
+                    <td style="padding: 20px" class="outer-column">
+                      <table
+                        width="80%"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="border: 0px solid"
+                      >
+                        <tr>
+                          <!-- ========>> START: LEFT COLUMN 30% WIDTH <<========= -->
+                          <td width="30%" valign="middle" class="column">
+                            <table
+                              width="100%"
+                              align="center"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              role="presentation"
+                              style="border: 0px solid"
+                            >
+                              <tr>
+                                <td
+                                  class="pad_tb_zero"
+                                  style="padding: 20px 0"
+                                  valign="middle"
+                                  align="center"
+                                >
+                                  <a href="#"
+                                    ><img
+                                      style="
+                                        max-width: 150px;
+                                        display: block;
+                                        height: auto;
+                                        font-size: 15px;
+                                        line-height: 15px;
+                                      "
+                                      src="https://i.ibb.co/PF0x6Rs/graph.png"
+                                      class="graph"
+                                      alt="graph"
+                                      width="150"
+                                      height="150"
+                                  /></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <!-- ========>> END: LEFT COLUMN 30% WIDTH <<========= -->
+
+                          <!-- ========>> START: RIGHT COLUMN 70% WIDTH <<========= -->
+                          <td width="70%" valign="middle" class="column second">
+                            <table
+                              width="88.71%"
+                              align="center"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              role="presentation"
+                              style="border: 0px solid"
+                            >
+                              <tr>
+                                <td>
+                                  <h1
+                                    class="sell_header_cta"
+                                    style="
+                                      font-family: Arial, Helvetica, sans-serif;
+                                      font-size: 24px;
+                                      line-height: 36px;
+                                      font-weight: 700;
+                                      margin: 0 0 10px 0;
+                                    "
+                                  >
+                                    Ready to start selling?
+                                  </h1>
+                                  <p
+                                    class="cta"
+                                    style="
+                                      margin: 0;
+                                      font-family: Arial, Helvetica, sans-serif;
+                                      font-size: 16px;
+                                      line-height: 24px;
+                                      font-weight: 400;
+                                      text-align: left;
+                                    "
+                                  >
+                                    <a
+                                      href="#"
+                                      style="
+                                        color: #405edd;
+                                        text-decoration: none;
+                                        font-weight: 700;
+                                        font-size: 16px;
+                                        line-height: 22px;
+                                      "
+                                      ><span>Choose a plan now</span></a
+                                    >
+                                    <a
+                                      href="#"
+                                      style="
+                                        color: #405edd;
+                                        text-decoration: none;
+                                        font-weight: 700;
+                                        font-size: 16px;
+                                        line-height: 22px;
+                                      "
+                                      >→</a
+                                    >
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <!-- ========>> END: RIGHT COLUMN 70% WIDTH <<========= -->
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- ========>> END: TABLE WIDTH 80% <<========= -->
+                </table>
+              </td>
+            </tr>
+            <!-- ========>> END: ROW 7 2 COLUMNS GRAPH <<========= -->
+
+            <!-- ========>> START: ROW 8 2 COLUMNS NOTIFICATION & STORE ICONS <<========= -->
+            <tr>
+              <td>
+                <table
+                  width="100%"
+                  align="center"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  role="presentation"
+                  style="border: 0px solid"
+                >
+                  <!-- ========>> START: padding <<========= -->
+                  <tr>
+                    <td
+                      style="padding: 10px 10px 20px 10px"
+                      class="two-columns"
+                    >
+                      <table
+                        width="100%"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="border: 0px solid"
+                      >
+                        <tr>
+                          <!-- ========>> START: COLUMN 1  50% WIDTH <<========= -->
+                          <td width="50%" class="column">
+                            <table
+                              width="100%"
+                              align="center"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              role="presentation"
+                              style="border: 0px solid"
+                            >
+                              <tr>
+                                <td style="padding: 10px">
+                                  <a href="#" target="_blank"
+                                    ><img
+                                      src="https://i.ibb.co/tqxvQZT/notification.png"
+                                      alt="notification"
+                                      width="260"
+                                      style="max-width: 100%; height: auto"
+                                  /></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <!-- ========>> END: COLUMN 1 50% WIDTH <<========= -->
+
+                          <!-- ========>> START: COLUMN 2 50% WIDTH <<========= -->
+                          <td width="50%" class="column last">
+                            <table
+                              width="100%"
+                              align="center"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              role="presentation"
+                              style="border: 0px solid"
+                            >
+                              <tr>
+                                <td>
+                                  <!-- START: FIRST ROW HEADLINE  -->
+                                  <table
+                                    width="100%"
+                                    align="center"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    role="presentation"
+                                  >
+                                    <tr>
+                                      <td
+                                        style="
+                                          text-align: left;
+                                          vertical-align: left;
+                                          padding-top: 20px;
+                                          padding-bottom: 20px;
+                                        "
+                                      >
+                                        <h3
+                                          style="
+                                            font-family: Arial, Helvetica,
+                                              sans-serif;
+                                            font-size: 16px;
+                                            line-height: 24px;
+                                            font-weight: 700;
+                                            margin: 0px;
+                                            text-align: left;
+                                            vertical-align: middle;
+                                          "
+                                        >
+                                          Download the Shopify app and manage
+                                          your business on the go
+                                        </h3>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <!-- END: FIRST ROW HEADLINE  -->
+
+                                  <!-- START: 2ND ROW STORE ICONS  -->
+                                  <table
+                                    width="100%"
+                                    align="center"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    role="presentation"
+                                    style="border: 0px solid"
+                                  >
+                                    <tr>
+                                      <!-- START: APPLE STORE ICON -->
+                                      <td
+                                        width="120"
+                                        style="width: 100%"
+                                        align="center"
+                                      >
+                                        <a href="#" target="_blank"
+                                          ><img
+                                            src="https://i.ibb.co/smFvXNn/app-store.png"
+                                            alt="apple store icon"
+                                            width="120"
+                                            height="40"
+                                            style="
+                                              max-width: 100%;
+                                              height: auto;
+                                            "
+                                        /></a>
+                                      </td>
+                                      <!-- END: APPLE STORE ICON -->
+
+                                      <!-- START: GOOGLE STORE ICON -->
+                                      <td
+                                        width="130"
+                                        style="width: 112%"
+                                        align="center"
+                                      >
+                                        <a href="#"
+                                          ><img
+                                            src="https://i.ibb.co/MCZ7k3s/google-store.png"
+                                            alt="google store icon"
+                                            width="130"
+                                            height="40"
+                                            style="
+                                              max-width: 100%;
+                                              height: auto;
+                                            "
+                                        /></a>
+                                      </td>
+                                      <!-- END: GOOGLE STORE ICON -->
+                                    </tr>
+                                  </table>
+                                  <!-- END: 2ND ROW STORE ICONS  -->
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <!-- ========>> END: COLUMN 2 50% WIDTH <<========= -->
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- ========>> END: padding <<========= -->
+                </table>
+              </td>
+            </tr>
+            <!-- ========>> END: ROW 8 2 COLUMNS NOTIFICATION & STORE ICONS <<========= -->
+
+            <!-- ========>> START: ROW 9 FOOTER <<========= -->
+            <tr>
+              <td>
+                <table
+                  width="100%"
+                  align="center"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  role="presentation"
+                  style="
+                    border: 1px solid white;
+                    background-color: #000;
+                    color: #ffffff;
+                    font-family: Arial, Helvetica, sans-serif;
+                  "
+                >
+                  <!-- ========>> START: TABLE WITH 80% WIDTH <<========= -->
+                  <tr>
+                    <td style="padding-bottom: 30px">
+                      <table
+                        width="80%"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="border: 0px solid white; background-color: #000"
+                      >
+                        <!-- START: HEADLINE  -->
+                        <tr>
+                          <td style="padding: 40px 10px 20px">
+                            <h3
+                              style="
+                                margin: 0px;
+                                font-weight: 700;
+                                line-height: 20px;
+                                font-size: 16px;
+                                text-align: center;
+                              "
+                            >
+                              Get tips and tutorials to help you build your
+                              store
+                            </h3>
+                          </td>
+                        </tr>
+                        <!-- END: HEADLINE  -->
+
+                        <!-- START: NAVIGATION MENU  -->
+                        <tr>
+                          <td
+                            class="nav"
+                            style="padding-left: 20px; padding-right: 10px"
+                          >
+                            <table
+                              width="100%"
+                              align="center"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              role="presentation"
+                              style="border: 0px solid white"
+                            >
+                              <tr>
+                                <!-- START: WEBINAR LINK  -->
+                                <td width="25%" class="each-nav">
+                                  <table
+                                    width="100%"
+                                    align="center"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    role="presentation"
+                                    style="border: 0px solid #fff"
+                                  >
+                                    <tr>
+                                      <td
+                                        class="pad_lr_zero"
+                                        style="padding: 10px 30px"
+                                        align="center"
+                                      >
+                                        <a href="#" style="color: #ffffff"
+                                          >Webinar</a
+                                        >
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <!-- END: WEBINAR LINK  -->
+
+                                <!-- START: GUIDES LINK  -->
+                                <td width="20%" class="each-nav">
+                                  <table
+                                    width="100%"
+                                    align="center"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    role="presentation"
+                                    style="border: 0px solid"
+                                  >
+                                    <tr>
+                                      <td
+                                        class="pad_lr_zero"
+                                        style="padding: 10px 20px"
+                                        align="center"
+                                      >
+                                        <a href="#" style="color: #ffffff"
+                                          >Guides</a
+                                        >
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <!-- END: WEBINAR LINK  -->
+
+                                <!-- START: BLOG LINK  -->
+                                <td width="20%" class="each-nav">
+                                  <table
+                                    width="100%"
+                                    align="center"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    role="presentation"
+                                    style="border: 0px solid"
+                                  >
+                                    <tr>
+                                      <td
+                                        class="pad_lr_zero"
+                                        style="padding: 10px 20px"
+                                        align="center"
+                                      >
+                                        <a href="#" style="color: #ffffff"
+                                          >Blog</a
+                                        >
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <!-- END: WEBINAR LINK  -->
+
+                                <!-- START: HELP CENTER LINK  -->
+                                <td width="35%" class="each-nav">
+                                  <table
+                                    width="100%"
+                                    align="center"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    role="presentation"
+                                    style="border: 0px solid"
+                                  >
+                                    <tr>
+                                      <td
+                                        class="pad_lr_zero"
+                                        style="padding: 10px 0px"
+                                        align="center"
+                                      >
+                                        <a href="#" style="color: #ffffff"
+                                          >Help&nbsp;Center</a
+                                        >
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <!-- END: HELP CENTER LINK  -->
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- END: NAVIGATION MENU -->
+
+                        <!-- START: SOCIAL MEDIA ICON  -->
+                        <tr>
+                          <td style="padding-top: 30px">
+                            <table
+                              width="100%"
+                              align="center"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              role="presentation"
+                              style="border: 0px solid"
+                            >
+                              <tr>
+                                <td
+                                  style="
+                                    text-align: center;
+                                    padding-bottom: 40px;
+                                  "
+                                >
+                                  <a href="#"
+                                    ><img
+                                      src="https://i.ibb.co/jhhKv8f/fb.png"
+                                      alt="facebook"
+                                      width="32"
+                                      style="padding: 0 4px; max-width: 32px"
+                                  /></a>
+                                  <a href="#"
+                                    ><img
+                                      src="https://i.ibb.co/bRGpPcH/tw.png"
+                                      alt="twitter"
+                                      width="32"
+                                      style="padding: 0 4px; max-width: 32px"
+                                  /></a>
+                                  <a href="#"
+                                    ><img
+                                      src="https://i.ibb.co/87SS9LK/ig.png"
+                                      alt="instagram"
+                                      width="32"
+                                      style="padding: 0 4px; max-width: 32px"
+                                  /></a>
+                                  <a href="#"
+                                    ><img
+                                      src="https://i.ibb.co/1r8ySJ8/tk.png"
+                                      alt="tiktok"
+                                      width="32"
+                                      style="padding: 0 4px; max-width: 32px"
+                                  /></a>
+                                  <a href="#"
+                                    ><img
+                                      src="https://i.ibb.co/GcMv9Br/in.png"
+                                      alt="linkedin"
+                                      width="32"
+                                      style="padding: 0 4px; max-width: 32px"
+                                  /></a>
+                                  <a href="#"
+                                    ><img
+                                      src="https://i.ibb.co/4KLBbG8/pt.png"
+                                      alt="pinterest"
+                                      width="32"
+                                      style="padding: 0 4px; max-width: 32px"
+                                  /></a>
+                                  <a href="#"
+                                    ><img
+                                      src="https://i.ibb.co/p0d1sgY/yt.png"
+                                      alt="youtube"
+                                      width="32"
+                                      style="padding: 0 4px; max-width: 32px"
+                                  /></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- END: SOCIAL MEDIA ICON  -->
+
+                        <!-- START: ADDRESS   -->
+                        <tr>
+                          <td>
+                            <table
+                              width="100%"
+                              align="center"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              role="presentation"
+                              style="border: 0px solid"
+                            >
+                              <tr>
+                                <td
+                                  style="
+                                    text-align: center;
+                                    padding-bottom: 25px;
+                                  "
+                                >
+                                  <p style="margin: 0">
+                                    <span
+                                      style="
+                                        font-family: Arial, Helvetica,
+                                          sans-serif;
+                                        font-size: 12px;
+                                        font-weight: 400;
+                                      "
+                                      >© Shopify, 15‍1 O'Con‍nor Str‍eet,
+                                      Gro‍und fl‍oor,<br />Ot‍tawa ON, K2P 2L8
+                                    </span>
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- END: ADDRESS   -->
+                        <!-- START: UNSUBSCRIBE & MANAGE PREFERENCE   -->
+                        <tr>
+                          <td>
+                            <table
+                              width="100%"
+                              align="center"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              role="presentation"
+                              style="border: 0px solid"
+                            >
+                              <tr>
+                                <td style="text-align: center">
+                                  <p
+                                    style="
+                                      margin: 0;
+                                      font-size: 12px;
+                                      font-weight: 400;
+                                      line-height: 24px;
+                                    "
+                                  >
+                                    <a href="#" style="color: #fff"
+                                      >Unsubscribe</a
+                                    >
+                                  </p>
+                                  <p
+                                    style="
+                                      margin: 0;
+                                      font-size: 12px;
+                                      font-weight: 400;
+                                      line-height: 24px;
+                                    "
+                                  >
+                                    <a
+                                      href="#"
+                                      style="color: #fff; text-decoration: none"
+                                      >Manage your preferences</a
+                                    >
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- END: UNSUBSCRIBE & MANAGE PREFERENCE   -->
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- ========>> END: TABLE WITH 80% WIDTH <<========= -->
+                </table>
+              </td>
+            </tr>
+            <!-- ========>> END: ROW 9 FOOTER <<========= -->
+          </table>
+          <!-- ========>> END: EMAIL CONTAINER<<========= -->
+        </td>
+      </tr>
+    </table>
+    <!-- ========>> END: EMAIL <<========= -->
+  </body>
+</html>

@@ -1,0 +1,2591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paypal Transactional Email</title>
+  </head>
+  <style type="text/css">
+    table {
+      table-layout: fixed !important;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    /* MEDIA QUERIES */
+    /* DESKTOP SIZE */
+    @media only screen and (min-width: 960px) {
+      .container {
+        max-width: 640px;
+      }
+    }
+
+    /* MID-SIZE/TABLET/IPAD */
+    @media only screen and (max-width: 960px) {
+      .container {
+        width: 640px;
+      }
+    }
+
+    /* MOBILE/IPHONE/ANDROID */
+    @media only screen and (min-width: 601px) {
+      .show_mobile {
+        display: none !important;
+      }
+    }
+
+    /* MOBILE/IPHONE/ANDROID */
+    @media only screen and (max-width: 600px) {
+      .container {
+        width: 100%;
+      }
+      .greeting {
+        text-align: center !important;
+        font-weight: bold;
+        /* display: inline-block !important; */
+      }
+      .logo-1 {
+        text-align: center !important;
+      }
+      .title-msg {
+        text-align: center !important;
+      }
+      .button {
+        text-align: center !important;
+      }
+      .paragraph-1 {
+        text-align: center !important;
+      }
+      .width_100 {
+        width: 100% !important;
+      }
+      .width_100_2_columns {
+        width: 100% !important;
+      }
+      .width_95 {
+        width: 95% !important;
+      }
+      .width_90 {
+        width: 90% !important;
+      }
+      .width_83 {
+        width: 83% !important;
+      }
+      .width_93 {
+        width: 93% !important;
+      }
+      .width_75 {
+        width: 75% !important;
+      }
+      .width_40 {
+        width: 40% !important;
+      }
+      .font_28 {
+        font-size: 28px !important;
+      }
+      .show_desktop {
+        display: none !important;
+      }
+      .align_left {
+        text-align: left !important;
+      }
+      .width_60 {
+        width: 60% !important;
+      }
+      .width_65 {
+        width: 65% !important;
+      }
+      .width_35 {
+        width: 35% !important;
+      }
+      .width_80_USD {
+        width: 80% !important;
+      }
+    }
+    /* EXTRA SMALL DEVICES/ APPLE WATCH */
+    @media only screen and (max-width: 380px) {
+      .font_24 {
+        font-size: 24px !important;
+      }
+      .font_16 {
+        font-size: 16px !important;
+      }
+
+      .align_center {
+        text-align: center !important;
+      }
+      .width_80 {
+        width: 80% !important;
+      }
+      .width_90 {
+        width: 90% !important;
+      }
+      /* .width_95 {
+        width: 95% !important;
+      } */
+      /* .font_12 {
+        font-size: 12px !important;
+      } */
+    }
+
+    /* EXTRA SMALL DEVICES/ APPLE WATCH */
+    @media only screen and (max-width: 360px) {
+      .font_14 {
+        font-size: 14px !important;
+      }
+    }
+
+    /* EXTRA SMALL DEVICES/ APPLE WATCH */
+    @media only screen and (max-width: 273px) {
+      .double_lh_3_em {
+        line-height: 3.0em !important;
+      }
+    }
+    /* EXTRA SMALL DEVICES/ APPLE WATCH */
+    @media only screen and (max-width: 460px) {
+      /* .font_12 {
+        font-size: 12px !important;
+      } */
+    }
+
+    /* EXTRA SMALL DEVICES/ APPLE WATCH */
+    @media only screen and (max-width: 405px) {
+      /* . {
+        font-size: 11px !important;
+      } */
+    }
+
+    /* EXTRA SMALL DEVICES/ APPLE WATCH */
+    @media only screen and (max-width: 380px) {
+      /* .font_10 {
+        font-size: 10px !important;
+      } */
+    }
+  </style>
+  <body style="background-color: #faf8f5">
+    <!-- ========>> START: EMAIL <<========= -->
+    <table
+      align="center"
+      width="100%"
+      border="0"
+      cellspacing="0"
+      cellpadding="0"
+      role="presentation"
+    >
+      <tr>
+        <td>
+          <!-- ========>> START: EMAIL CONTAINER <<========= -->
+          <table
+            align="center"
+            width="640"
+            border="0"
+            cellspacing="0"
+            cellpadding="0"
+            role="presentation"
+            class="container"
+            style="background-color: #ffffff"
+          >
+            <!-- ========>> START: ROW 1 BANNER <<========= -->
+            <tr>
+              <td class="greeting">
+                <table
+                  width="100%"
+                  align="center"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  role="presentation"
+                  style="border-spacing: 0; border-collapse: collapse"
+                >
+                  <tr>
+                    <td
+                      style="
+                        padding: 10px;
+                        color: #687173;
+                        font-size: 14px;
+                        line-height: 20px;
+                      "
+                    >
+                      <span>Hello, John Doe</span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- ========>> END: ROW 1 BANNER <<========= -->
+
+            <!-- ========>> START: ROW 2 HEADER  LOGO<<========= -->
+            <tr>
+              <td style="background-color: #faf8f5">
+                <table
+                  width="100%"
+                  align="left"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  role="presentation"
+                  style="border-spacing: 0; border-collapse: collapse"
+                >
+                  <tr>
+                    <td style="margin: 0" class="logo-1">
+                      <a href="#"
+                        ><img
+                          src="https://i.ibb.co/p3qQty0/logo1.png"
+                          alt="PayPal logo"
+                          width="63"
+                          height="63"
+                      /></a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- ========>> END: ROW 2 HEADER  LOGO <<========= -->
+
+            <!-- ========>> START: ROW 3 TITLE MESSAGE, BUTTON & PARAGRAPH <<========= -->
+            <tr>
+              <td style="background-color: #faf8f5">
+                <table
+                  width="570"
+                  class="width_90"
+                  align="center"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  role="presentation"
+                  style="
+                    border-spacing: 0;
+                    border-collapse: collapse;
+                    border: 0px solid;
+                  "
+                >
+                  <!-- ==>> START: ROW 1 TITLE MESSAGE <<== -->
+                  <tr>
+                    <td
+                      class="title-msg"
+                      style="padding-bottom: 30px"
+                      valign="middle"
+                    >
+                      <p
+                        class="font_28 font_24"
+                        style="
+                          font-size: 32px;
+                          color: #001c64;
+                          line-height: 38px;
+                          margin: 0;
+                        "
+                      >
+                        You sent a payment of $10.00 USD to Patreon (<span
+                          ><a
+                            style="color: #0000ee; word-break: break-word"
+                            href="mailto:noreply@patreon.com"
+                            >noreply@patreon.com</a
+                          ></span
+                        >)
+                      </p>
+                    </td>
+                  </tr>
+                  <!-- ==>> END: ROW 1 TITLE MESSAGE <<== -->
+
+                  <!-- ==>> START: ROW 2 BUTTON <<== -->
+                  <tr>
+                    <td style="padding-bottom: 30px" valign="middle">
+                      <table
+                        width="100%"
+                        class="align_center"
+                        align="left"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="border-spacing: 0; border-collapse: collapse"
+                      >
+                        <tr>
+                          <td style="padding: 0">
+                            <a
+                              class="font_16 font_14"
+                              href="#"
+                              style="
+                                text-decoration: none;
+                                padding: 12px 35px;
+                                background-color: #003087;
+                                display: inline-block;
+                                color: #ffffff;
+                                font-size: 18px;
+                                line-height: 22px;
+                                border-radius: 50px;
+                              "
+                              >View or Manage Payment</a
+                            >
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- ==>> END: ROW 2 BUTTON <<== -->
+
+                  <!-- ==>> START: SPACER 20 <<== -->
+                  <tr>
+                    <td height="20">&nbsp;</td>
+                  </tr>
+                  <!-- ==>> END: SPACER 20 <<== -->
+
+                  <!-- ==>> START: ROW 3 PARAGRAPH <<== -->
+                  <tr>
+                    <td style="padding: 0 0 25px 0" valign="middle">
+                      <table
+                        width="100%"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="border-spacing: 0; border-collapse: collapse"
+                      >
+                        <tr>
+                          <td style="padding: 0">
+                            <p
+                              class="align_center"
+                              style="
+                                font-size: 14px;
+                                line-height: 20px;
+                                word-break: break-word;
+                                color: #001435;
+                                margin: 0;
+                              "
+                            >
+                              It may take a few moments for this transaction to
+                              appear in your account.
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- ==>> END: ROW 3 PARAGRAPH <<== -->
+                </table>
+              </td>
+            </tr>
+            <!-- ========>> END: ROW 3 TITLE MESSAGE, BUTTON & PARAGRAPH <<========= -->
+
+            <!-- ========>> START: ROW 4 TRANSACTION, MERCHANT & INVOICE <<========= -->
+            <tr>
+              <td style="padding: 0 0 25px 0; background-color: #faf8f5">
+                <table
+                  width="100%"
+                  align="center"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  role="presentation"
+                  style="border-spacing: 0; border-collapse: collapse"
+                >
+                  <tr>
+                    <td style="padding: 0">
+                      <table
+                        width="570"
+                        class="width_100"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="
+                          border-spacing: 0;
+                          border-collapse: collapse;
+                          border: 0px solid;
+                          background-color: #fff;
+                          border-radius: 15px;
+                        "
+                      >
+                        <tr>
+                          <td style="padding: 25px 0 20px 0">
+                            <table
+                              width="520"
+                              align="center"
+                              class="width_95"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              role="presentation"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                              "
+                            >
+                              <!-- ==>> START: ROW 1 TRANSACTION <<== -->
+                              <tr>
+                                <!-- ==>> START: COLUMN 1 <<== -->
+                                <td style="padding: 0" width="50%" valign="top">
+                                  <table
+                                    width="240"
+                                    class="width_80 width_90"
+                                    align="center"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    role="presentation"
+                                    style="
+                                      border-spacing: 0;
+                                      border-collapse: collapse;
+                                    "
+                                  >
+                                    <tr>
+                                      <td style="padding: 0 0 20px 0">
+                                        <p
+                                          class="font_14"
+                                          style="
+                                            margin: 0;
+                                            font-size: 14px;
+                                            line-height: 25px;
+                                            color: #001435;
+                                            word-break: break-word;
+                                            text-align: left;
+                                          "
+                                        >
+                                          <span
+                                            ><strong
+                                              >Transaction ID</strong
+                                            ></span
+                                          >
+                                          <br />
+                                          <a href="#">
+                                            <span>7A97148X95C39OP56</span>
+                                          </a>
+                                        </p>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <!-- ==>> END: COLUMN 1 <<== -->
+
+                                <!-- ==>> START: COLUMN 2 <<== -->
+                                <td style="padding: 0" width="50%" valign="top">
+                                  <table
+                                    width="240"
+                                    class="width_80 width_90"
+                                    align="center"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    role="presentation"
+                                    style="
+                                      border-spacing: 0;
+                                      border-collapse: collapse;
+                                    "
+                                  >
+                                    <tr>
+                                      <td style="padding: 0 0 20px 0">
+                                        <p
+                                          class="font_14"
+                                          style="
+                                            margin: 0;
+                                            font-size: 14px;
+                                            line-height: 25px;
+                                            color: #001435;
+                                            word-break: break-word;
+                                            text-align: left;
+                                          "
+                                        >
+                                          <span
+                                            ><strong
+                                              >Transaction date</strong
+                                            ></span
+                                          >
+                                          <br />
+                                          <span>Jul 15, 2023 04:18:32 EST</span>
+                                        </p>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <!-- ==>> END: COLUMN 2 <<== -->
+                              </tr>
+                              <!-- ==>> END: ROW 1 TRANSACTION <<== -->
+
+                              <!-- ==>> START: ROW 2 MERCHANT <<== -->
+                              <tr>
+                                <!-- ==>> START: COLUMN 1 <<== -->
+                                <td style="padding: 0" width="50%" valign="top">
+                                  <table
+                                    width="240"
+                                    class="width_80 width_90"
+                                    align="center"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    role="presentation"
+                                    style="
+                                      border-spacing: 0;
+                                      border-collapse: collapse;
+                                    "
+                                  >
+                                    <tr>
+                                      <td style="padding: 0 0 20px 0">
+                                        <p
+                                          class="font_14"
+                                          style="
+                                            margin: 0;
+                                            font-size: 14px;
+                                            line-height: 25px;
+                                            color: #001435;
+                                            word-break: break-word;
+                                            text-align: left;
+                                          "
+                                        >
+                                          <span><strong>Merchant</strong></span>
+                                          <br />
+                                          <span>Patreon</span>
+                                          <br />
+                                          <span
+                                            ><a
+                                              href="mailto:noreply@patreon.com"
+                                              >noreply@patreon.com</a
+                                            ></span
+                                          >
+                                          <br />
+                                          <span>+1 0000000000 <br /></span>
+                                        </p>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <!-- ==>> END: COLUMN 1 <<== -->
+
+                                <!-- ==>> START: COLUMN 2 <<== -->
+                                <td style="padding: 0" width="50%" valign="top">
+                                  <table
+                                    width="240"
+                                    class="width_80 width_90"
+                                    align="center"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    role="presentation"
+                                    style="
+                                      border-spacing: 0;
+                                      border-collapse: collapse;
+                                    "
+                                  >
+                                    <tr>
+                                      <td style="padding: 0 0 20px 0">
+                                        <p
+                                          class="font_14"
+                                          style="
+                                            margin: 0;
+                                            font-size: 14px;
+                                            line-height: 25px;
+                                            color: #001435;
+                                            word-break: break-word;
+                                            text-align: left;
+                                          "
+                                        >
+                                          <span
+                                            ><strong
+                                              >Instructions to merchant</strong
+                                            ></span
+                                          >
+                                          <br />
+                                          <span
+                                            >You haven't entered any
+                                            instructions.</span
+                                          >
+                                        </p>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <!-- ==>> END: COLUMN 2 <<== -->
+                              </tr>
+                              <!-- ==>> END: ROW 2 MERCHANT <<== -->
+
+                              <!-- ==>> START: ROW 3 INVOICE <<== -->
+                              <tr>
+                                <!-- ==>> START: COLUMN 1 <<== -->
+                                <td
+                                  style="padding: 0"
+                                  align="left"
+                                  width="50%"
+                                  valign="top"
+                                >
+                                  <table
+                                    width="240"
+                                    class="width_80 width_90"
+                                    align="center"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    role="presentation"
+                                    style="
+                                      border-spacing: 0;
+                                      border-collapse: collapse;
+                                    "
+                                  >
+                                    <tr>
+                                      <td style="padding: 0 0 20px 0">
+                                        <p
+                                          class="font_14"
+                                          style="
+                                            margin: 0;
+                                            font-size: 14px;
+                                            line-height: 25px;
+                                            color: #001435;
+                                            word-break: break-word;
+                                            text-align: left;
+                                          "
+                                        >
+                                          <span
+                                            ><strong>Invoice ID</strong></span
+                                          >
+                                          <br />
+                                          <span>chargeF25K83N47594</span>
+                                        </p>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <!-- ==>> END: COLUMN 1 <<== -->
+                              </tr>
+                              <!-- ==>> END: ROW 3 INVOICE <<== -->
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- ========>> END: ROW 4 TRANSACTION, MERCHANT & INVOICE <<========= -->
+
+            <!-- ==>> START: ROW 5 REWARDS IMG <<== -->
+            <tr>
+              <td style="padding: 0 0 20px; background-color: #faf8f5">
+                <table
+                  width="100%"
+                  align="center"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  role="presentation"
+                  style="border-spacing: 0; border-collapse: collapse"
+                >
+                  <tr>
+                    <td>
+                      <!-- ==>> START: TABLE 600 <<== -->
+                      <table
+                        width="82.85%"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="border-spacing: 0; border-collapse: collapse"
+                      >
+                        <tr>
+                          <td align="center" style="padding: 0">
+                            <!-- ==>> START: IMG <<== -->
+                            <a href="#"
+                              ><img
+                                src="https://i.ibb.co/p4t4y9P/rewards.png"
+                                width="530"
+                                style="max-width: 100%; height: auto"
+                                alt="Want some rewards? Have your friends join PayPal. Offer may be canceled or modified at any time. Terms apply. Invite Your Friends"
+                            /></a>
+                            <!-- ==>> END: IMG <<== -->
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- ==>> END: TABLE 600 <<== -->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- ==>> END: ROW 5 REWARDS IMG <<== -->
+
+            <!-- ========>> START: ROW 6 DESCRIPTION TABLE 590PX <<========= -->
+            <tr>
+              <td style="background-color: #faf8f5">
+                <table
+                  width="590"
+                  class="width_90"
+                  align="center"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  role="presentation"
+                  style="border-spacing: 0; border-collapse: collapse"
+                >
+                  <!-- ==>>  START: 4 COLUMNS DESKTOP ROW <<== -->
+                  <tr>
+                    <td
+                      class="show_desktop"
+                      style="font-size: 14px; padding: 0 0 20px 0"
+                    >
+                      <!-- ==>>START: COLUMN 1 <<== -->
+                      <table
+                        width="40%"
+                        align="left"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="
+                          border-spacing: 0;
+                          border-collapse: collapse;
+                          border: 0px solid;
+                        "
+                      >
+                        <!-- ==>> START: ROW 1 TITLE <<== -->
+                        <tr>
+                          <th
+                            style="
+                              padding: 15px 10px;
+                              background-color: #f5f7fa;
+                              border-top: 1px solid #b7bcbf;
+                              border-bottom: 1px solid #b7bcbf;
+                              text-align: left;
+                            "
+                          >
+                            Description
+                          </th>
+                        </tr>
+                        <!-- ==>> END: ROW 1 TITLE <<== -->
+
+                        <!-- ==>> START: ROW 2 DATA <<== -->
+                        <tr>
+                          <td
+                            style="
+                              padding: 10px;
+                              border-top: 0px;
+                              border-bottom: 1px solid #cbd2d6;
+                              text-align: left;
+                              line-height: 22px;
+                              background-color: #faf8f5;
+                            "
+                            valign="middle"
+                          >
+                            <span style="color: #001435"
+                              >Patreon*&nbsp;Membership</span
+                            >
+                          </td>
+                        </tr>
+                        <!-- ==>> END: ROW 2 DATA <<== -->
+                      </table>
+                      <!-- ==>>END: COLUMN 1 <<== -->
+
+                      <!-- ==>>START: COLUMN 2 <<== -->
+                      <table
+                        width="22%"
+                        align="left"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="
+                          border-spacing: 0;
+                          border-collapse: collapse;
+                          border: 0px solid;
+                        "
+                      >
+                        <!-- ==>> START: ROW 1 TITLE <<== -->
+                        <tr>
+                          <th
+                            style="
+                              padding: 15px 10px;
+                              background-color: #f5f7fa;
+                              border-top: 1px solid #b7bcbf;
+                              border-bottom: 1px solid #b7bcbf;
+                              text-align: right;
+                            "
+                          >
+                            Unit&nbsp;price
+                          </th>
+                        </tr>
+                        <!-- ==>> END: ROW 1 TITLE <<== -->
+
+                        <!-- ==>> START: ROW 2 DATA <<== -->
+                        <tr>
+                          <td
+                            style="
+                              padding: 10px;
+                              border-top: 0px;
+                              border-bottom: 1px solid #cbd2d6;
+                              text-align: right;
+                              line-height: 22px;
+                              background-color: #faf8f5;
+                            "
+                            valign="middle"
+                          >
+                            <span>$10.00&nbsp;USD</span>
+                          </td>
+                        </tr>
+                        <!-- ==>> END: ROW 2 DATA <<== -->
+                      </table>
+                      <!-- ==>>END: COLUMN 2 <<== -->
+
+                      <!-- ==>>START: COLUMN 3 <<== -->
+                      <table
+                        width="12%"
+                        align="left"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="
+                          border-spacing: 0;
+                          border-collapse: collapse;
+                          border: 0px solid;
+                        "
+                      >
+                        <!-- ==>> START: ROW 1 TITLE <<== -->
+                        <tr>
+                          <th
+                            style="
+                              padding: 15px 10px;
+                              background-color: #f5f7fa;
+                              border-top: 1px solid #b7bcbf;
+                              border-bottom: 1px solid #b7bcbf;
+                              text-align: right;
+                            "
+                          >
+                            Qty
+                          </th>
+                        </tr>
+                        <!-- ==>> END: ROW 1 TITLE <<== -->
+
+                        <!-- ==>> START: ROW 2 DATA <<== -->
+                        <tr>
+                          <td
+                            style="
+                              padding: 10px;
+                              border-top: 0px;
+                              border-bottom: 1px solid #cbd2d6;
+                              text-align: right;
+                              line-height: 22px;
+                              background-color: #faf8f5;
+                            "
+                            valign="middle"
+                          >
+                            <span>1</span>
+                          </td>
+                        </tr>
+                        <!-- ==>> END: ROW 2 DATA <<== -->
+                      </table>
+                      <!-- ==>>END: COLUMN 3 <<== -->
+
+                      <!-- ==>>START: COLUMN 4 <<== -->
+                      <table
+                        width="26%"
+                        align="left"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="
+                          border-spacing: 0;
+                          border-collapse: collapse;
+                          border: 0px solid;
+                        "
+                      >
+                        <!-- ==>> START: ROW 1 TITLE <<== -->
+                        <tr>
+                          <th
+                            style="
+                              padding: 15px 10px;
+                              background-color: #f5f7fa;
+                              border-top: 1px solid #b7bcbf;
+                              border-bottom: 1px solid #b7bcbf;
+                              text-align: right;
+                            "
+                          >
+                            Amount
+                          </th>
+                        </tr>
+                        <!-- ==>> END: ROW 1 TITLE <<== -->
+
+                        <!-- ==>> START: ROW 2 DATA <<== -->
+                        <tr>
+                          <td
+                            style="
+                              padding: 10px;
+                              border-top: 0px;
+                              border-bottom: 1px solid #cbd2d6;
+                              text-align: right;
+                              line-height: 22px;
+                              background-color: #faf8f5;
+                            "
+                            valign="middle"
+                          >
+                            <span>$10.00&nbsp;USD</span>
+                          </td>
+                        </tr>
+                        <!-- ==>> END: ROW 2 DATA <<== -->
+                      </table>
+                      <!-- ==>>END: COLUMN 4 <<== -->
+                    </td>
+                  </tr>
+                  <!-- ==>> END: 4 COLUMNS DESKTOP ROW <<== -->
+
+                  <!-- ========>> START: 2 COLUMNS MOBILE <<========= -->
+                  <tr>
+                    <td>
+                      <table
+                        width="100%"
+                        class="show_mobile width_100_2_columns"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="
+                          border-spacing: 0;
+                          border-collapse: collapse;
+                          border: 0px solid;
+                        "
+                      >
+                        <tr>
+                          <td style="font-size: 16px" class="font_14">
+                            <!-- ==>> START: COLUMN 1 <<== -->
+                            <table
+                              width="35%"
+                              align="left"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              role="presentation"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                              "
+                            >
+                              <!-- ==>> START: ROW 1 DESC <<== -->
+                              <tr>
+                                <td 
+                                  style="
+                                    border-top: 2px solid #c6c6c6;
+                                    padding-top: 20px;
+                                  "
+                                >
+                                  <table
+                                    width="90%"
+                                    align="center"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    role="presentation"
+                                    style="
+                                      border-spacing: 0;
+                                      border-collapse: collapse;
+                                    "
+                                  >
+                                    <tr>
+                                      <th
+                                        class="double_lh_3_em"
+                                        style="
+                                          padding: 10px 0px;
+                                          text-align: left;
+                                          background-color: #faf8f5;
+                                          line-height: 1.5em;
+                                          /* border-bottom: 1px solid #b7bcbf; */
+                                          /* letter-spacing: 1px; */
+                                        "
+                                      >
+                                        Description
+                                      </th>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <!-- ==>> END: ROW 1 DESC <<== -->
+
+                              <!-- ==>> START: ROW 2 UNIT PRICE <<== -->
+                              <tr>
+                                <td>
+                                  <table
+                                    width="90%"
+                                    align="center"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    role="presentation"
+                                    style="
+                                      border-spacing: 0;
+                                      border-collapse: collapse;
+                                    "
+                                  >
+                                    <tr>
+                                      <th
+                                        class=""
+                                        style="
+                                          padding: 10px 0px;
+                                          text-align: left;
+                                          background-color: #faf8f5;
+                                          line-height: 1.5em;
+                                          /* border-bottom: 1px solid #b7bcbf; */
+                                          /* letter-spacing: 1px; */
+                                        "
+                                      >
+                                        Unit&nbsp;price
+                                      </th>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <!-- ==>> END: ROW 2 UNIT PRICE <<== -->
+
+                              <!-- ==>> START: ROW 3 QTY <<== -->
+                              <tr>
+                                <td>
+                                  <table
+                                    width="90%"
+                                    align="center"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    role="presentation"
+                                    style="
+                                      border-spacing: 0;
+                                      border-collapse: collapse;
+                                    "
+                                  >
+                                    <tr>
+                                      <th
+                                        class=""
+                                        style="
+                                          padding: 10px 0px;
+                                          text-align: left;
+                                          background-color: #faf8f5;
+                                          line-height: 1.5em;
+                                          /* border-bottom: 1px solid #b7bcbf; */
+                                          /* letter-spacing: 1px; */
+                                        "
+                                      >
+                                        Quantity
+                                      </th>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <!-- ==>> END: ROW 3 QTY <<== -->
+
+                              <!-- ==>> START: ROW 4 AMOUNT <<== -->
+                              <tr>
+                                <td
+                                  style="
+                                    border-bottom: 2px solid #c6c6c6;
+                                    padding-bottom: 20px;
+                                  "
+                                >
+                                  <table
+                                    width="90%"
+                                    align="center"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    role="presentation"
+                                    style="
+                                      border-spacing: 0;
+                                      border-collapse: collapse;
+                                    "
+                                  >
+                                    <tr>
+                                      <th
+                                        class=""
+                                        style="
+                                          padding: 10px 0px;
+                                          text-align: left;
+                                          background-color: #faf8f5;
+                                          line-height: 1.5em;
+                                          /* border-bottom: 1px solid #b7bcbf; */
+                                          /* letter-spacing: 1px; */
+                                        "
+                                      >
+                                        Amount
+                                      </th>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <!-- ==>> END: ROW 4 AMOUNT <<== -->
+                            </table>
+                            <!-- ==>> END: COLUMN 1 <<== -->
+
+                            <!-- ==>> START: COLUMN 2 <<== -->
+                            <table
+                              width="65%"
+                              align="left"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              role="presentation"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                              "
+                            >
+                              <!-- ==>> START: ROW 1 PATREON <<== -->
+                              <tr>
+                                <td
+                                  style="
+                                    border-top: 2px solid #c6c6c6;
+                                    padding-top: 20px;
+                                  "
+                                >
+                                  <table
+                                    width="90%"
+                                    align="center"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    role="presentation"
+                                    style="
+                                      border-spacing: 0;
+                                      border-collapse: collapse;
+                                    "
+                                  >
+                                    <tr>
+                                      <td
+                                        style="
+                                          padding: 10px 0px;
+                                          text-align: right;
+                                          background-color: #faf8f5;
+                                          line-height: 1.5em;
+                                          /* line-height: 22px; */
+                                          /* letter-spacing: 1px; */
+                                        "
+                                        valign="middle"
+                                      >
+                                        <span style="color: #001435"
+                                          >Patreon* Membership</span
+                                        >
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <!-- ==>> END: ROW 1 PATREON <<== -->
+
+                              <!-- ==>> START: ROW 2 UNIT PRICE <<== -->
+                              <tr>
+                                <td>
+                                  <table
+                                    width="90%"
+                                    align="center"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    role="presentation"
+                                    style="
+                                      border-spacing: 0;
+                                      border-collapse: collapse;
+                                    "
+                                  >
+                                    <tr>
+                                      <td
+                                        style="
+                                          padding: 10px 0px;
+                                          text-align: right;
+                                          background-color: #faf8f5;
+                                          line-height: 1.5em;
+                                          /* line-height: 22px; */
+                                          /* letter-spacing: 1px; */
+                                        "
+                                        valign="middle"
+                                      >
+                                        $10.00&nbsp;USD
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <!-- ==>> END: ROW 2 UNIT PRICE <<== -->
+
+                              <!-- ==>> START: ROW 3 QTY <<== -->
+                              <tr>
+                                <td>
+                                  <table
+                                    width="90%"
+                                    align="center"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    role="presentation"
+                                    style="
+                                      border-spacing: 0;
+                                      border-collapse: collapse;
+                                    "
+                                  >
+                                    <tr>
+                                      <td
+                                        style="
+                                          padding: 10px 0px;
+                                          text-align: right;
+                                          background-color: #faf8f5;
+                                          line-height: 1.5em;
+                                          /* line-height: 22px; */
+                                          /* letter-spacing: 1px; */
+                                        "
+                                        valign="middle"
+                                      >
+                                        1
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <!-- ==>> END: ROW 3 QTY <<== -->
+
+                              <!-- ==>> START: ROW 4 AMOUNT <<== -->
+                              <tr>
+                                <td
+                                  style="
+                                    border-bottom: 2px solid #c6c6c6;
+                                    padding-bottom: 20px;
+                                  "
+                                >
+                                  <table
+                                    width="90%"
+                                    align="center"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    role="presentation"
+                                    style="
+                                      border-spacing: 0;
+                                      border-collapse: collapse;
+                                    "
+                                  >
+                                    <tr>
+                                      <td
+                                        style="
+                                          padding: 10px 0px;
+                                          text-align: right;
+                                          background-color: #faf8f5;
+                                          line-height: 1.5em;
+                                          /* line-height: 22px; */
+                                          /* letter-spacing: 1px; */
+                                        "
+                                        valign="middle"
+                                      >
+                                        $10.00&nbsp;USD
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <!-- ==>> END: ROW 4 AMOUNT <<== -->
+                            </table>
+                            <!-- ==>> END: COLUMN 2 <<== -->
+                          </td>
+                        </tr>
+
+                        <!-- ==>> START: SPACER 20 <<== -->
+                        <tr>
+                          <td
+                            style="padding: 0"
+                            height="20"
+                            valign="middle"
+                          ></td>
+                        </tr>
+                        <!-- ==>> END: SPACER 20 <<== -->
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- ========>> END: 2 COLUMNS MOBILE <<========= -->
+
+                  <!-- ==>>  START: ROW 1 2 COLUMNS  <<== -->
+                  <tr>
+                    <td style="padding: 0 0 0px 0">
+                      <!-- ==>> START: COLUMN 1 <<== -->
+                      <table
+                        class="font_14 width_60"
+                        width="75%"
+                        align="left"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="
+                          border-spacing: 0;
+                          border-collapse: collapse;
+                          font-size: 14px;
+                          border: 0px solid;
+                        "
+                      >
+                        <tr>
+                          <td>
+                            <table
+                              width="90%"
+                              align="center"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              role="presentation"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  style="
+                                    padding: 5px 0px 0 0;
+                                    text-align: right;
+                                  "
+                                  valign="middle"
+                                >
+                                  <span><strong>Subtotal</strong></span>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- ==>> END: COLUMN 1 <<== -->
+
+                      <!-- ==>> START: COLUMN 2 <<== -->
+                      <table
+                        class="font_14 width_40"
+                        width="25%"
+                        align="right"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="
+                          border-spacing: 0;
+                          border-collapse: collapse;
+                          font-size: 14px;
+                          border: 0px solid;
+                        "
+                      >
+                        <tr>
+                          <td>
+                            <table
+                              class="width_83"
+                              width="90%"
+                              align="center"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              role="presentation"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  style="
+                                    padding: 5px 0px 0 0;
+                                    text-align: right;
+                                  "
+                                  valign="middle"
+                                >
+                                  <span>$10.00&nbsp;USD</span>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- ==>> END: COLUMN 2 <<== -->
+                    </td>
+                  </tr>
+                  <!-- ==>> END: ROW 1 2 COLUMNS  <<== -->
+
+                  <!-- ==>>  START: ROW 2 2 COLUMNS  <<== -->
+                  <tr>
+                    <td style="padding: 0 0 0px 0" class="font_14">
+                      <!-- ==>> START: COLUMN 1 <<== -->
+                      <table
+                        class="font_14 width_60"
+                        width="75%"
+                        align="left"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="
+                          border-spacing: 0;
+                          border-collapse: collapse;
+                          font-size: 14px;
+                          border: 0px solid;
+                        "
+                      >
+                        <tr>
+                          <td>
+                            <table
+                              width="90%"
+                              align="center"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              role="presentation"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  style="
+                                    padding: 5px 0px 0 0;
+                                    text-align: right;
+                                  "
+                                  valign="middle"
+                                >
+                                  <span><strong>Total</strong></span>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- ==>> END: COLUMN 1 <<== -->
+
+                      <!-- ==>> START: COLUMN 2 <<== -->
+                      <table
+                        class="font_14 width_40"
+                        width="25%"
+                        align="right"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="
+                          border-spacing: 0;
+                          border-collapse: collapse;
+                          font-size: 14px;
+                          border: 0px solid;
+                        "
+                      >
+                        <tr>
+                          <td>
+                            <table
+                              class="width_83"
+                              width="90%"
+                              align="center"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              role="presentation"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  style="
+                                    padding: 5px 0px 0 0;
+                                    text-align: right;
+                                  "
+                                  valign="middle"
+                                >
+                                  <span>$10.00&nbsp;USD</span>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- ==>> END: COLUMN 2 <<== -->
+                    </td>
+                  </tr>
+                  <!-- ==>> END: ROW 2 2 COLUMNS  <<== -->
+
+                  <!-- ==>>  START: ROW 3 2 COLUMNS  <<== -->
+                  <tr>
+                    <td style="padding: 0 0 0px 0">
+                      <!-- ==>> START: COLUMN 1 <<== -->
+                      <table
+                        class="font_14 width_60"
+                        width="75%"
+                        align="left"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="
+                          border-spacing: 0;
+                          border-collapse: collapse;
+                          font-size: 14px;
+                          border: 0px solid;
+                        "
+                      >
+                        <tr>
+                          <td>
+                            <table
+                              width="90%"
+                              align="center"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              role="presentation"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  style="
+                                    padding: 15px 0px 10px 0;
+                                    text-align: right;
+                                  "
+                                  valign="middle"
+                                >
+                                  <span><strong>Payment</strong></span>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- ==>> END: COLUMN 1 <<== -->
+
+                      <!-- ==>> START: COLUMN 2 <<== -->
+                      <table
+                        class="font_14 width_40"
+                        width="25%"
+                        align="right"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="
+                          border-spacing: 0;
+                          border-collapse: collapse;
+                          font-size: 14px;
+                          border: 0px solid;
+                        "
+                      >
+                        <tr>
+                          <td>
+                            <table
+                              class="width_83"
+                              width="90%"
+                              align="center"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              role="presentation"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  style="
+                                    padding: 15px 0px 10px 0;
+                                    text-align: right;
+                                  "
+                                  valign="middle"
+                                >
+                                  <span>$10.00&nbsp;USD</span>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- ==>> END: COLUMN 2 <<== -->
+                    </td>
+                  </tr>
+                  <!-- ==>> END: ROW 3 2 COLUMNS  <<== -->
+
+                  <!-- ==>> START: ROW 4 1 COLUMN <<== -->
+                  <tr>
+                    <td style="padding: 0; font-size: 14px" class="font_14">
+                      <!-- ==>> START: COLUMN <<== -->
+                      <table
+                        class="width_93"
+                        width="98%"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="
+                          border-spacing: 0;
+                          border-collapse: collapse;
+                          border: 0px solid;
+                        "
+                      >
+                        <tr>
+                          <td style="padding: 5px 0 0 0; text-align: right">
+                            <span
+                              >Charge will appear on your credit card statement
+                              as "PAYPAL *PATREON MEMBER"</span
+                            >
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- ==>> END: COLUMN <<== -->
+                    </td>
+                  </tr>
+                  <!-- ==>> END: ROW 4 1 COLUMN <<== -->
+
+                  <!-- ==>> START: ROW 5 1 COLUMN <<== -->
+                  <tr>
+                    <td style="padding: 0; font-size: 14px" class="font_14">
+                      <!-- ==>> START: COLUMN <<== -->
+                      <table
+                        class="width_93"
+                        width="98%"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="
+                          border-spacing: 0;
+                          border-collapse: collapse;
+                          border: 0px solid;
+                        "
+                      >
+                        <tr>
+                          <td style="padding: 5px 0px 0 0; text-align: right">
+                            <span
+                              >Payment sent to
+                              <a
+                                href="mailto:noreply@patreon.com"
+                                style="color: #0000ee"
+                                >noreply@patreon.com</a
+                              ></span
+                            >
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- ==>> END: COLUMN <<== -->
+                    </td>
+                  </tr>
+                  <!-- ==>> END: ROW 5 1 COLUMN <<== -->
+
+                  <!-- ==>> START: ROW 6 1 COLUMN <<== -->
+                  <tr>
+                    <td style="padding: 0; font-size: 14px" class="font_14">
+                      <!-- ==>> START: COLUMN <<== -->
+                      <table
+                        class="width_93"
+                        width="98%"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="
+                          border-spacing: 0;
+                          border-collapse: collapse;
+                          border: 0px solid;
+                        "
+                      >
+                        <tr>
+                          <td style="padding: 5px 0px 0 0; text-align: right">
+                            <span
+                              >Payment sent from
+                              <a
+                                href="mailto:john.doe@gmail.com"
+                                style="color: #0000ee"
+                                >john.doe@gmail.com</a
+                              ></span
+                            >
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- ==>> END: COLUMN <<== -->
+                    </td>
+                  </tr>
+                  <!-- ==>> END: ROW 6 1 COLUMN <<== -->
+
+                  <!-- ==>> START: ROW 7 SPACER 20 <<== -->
+                  <tr>
+                    <td style="padding: 0" height="20" valign="middle"></td>
+                  </tr>
+                  <!-- ==>> END: ROW 7 SPACER 20 <<== -->
+
+                  <!-- ==>>  START: ROW 8 2 COLUMNS  <<== -->
+                  <tr>
+                    <td style="padding: 0 0 0px 0">
+                      <!-- ==>> START: COLUMN 1 <<== -->
+                      <table
+                        class="font_14"
+                        width="74%"
+                        align="left"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="
+                          border-spacing: 0;
+                          border-collapse: collapse;
+                          font-size: 14px;
+                          border: 0px solid;
+                        "
+                      >
+                        <tr>
+                          <td>
+                            <table
+                              width="90%"
+                              align="center"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              role="presentation"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  style="padding: 10px 0; text-align: right"
+                                  valign="middle"
+                                >
+                                  <span
+                                    ><strong
+                                      >Funding Sources Used (Total)</strong
+                                    ></span
+                                  >
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- ==>> END: COLUMN 1 <<== -->
+
+                      <!-- ==>> START: COLUMN 2 <<== -->
+                      <table
+                        class="font_14"
+                        width="26%"
+                        align="right"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="
+                          border-spacing: 0;
+                          border-collapse: collapse;
+                          font-size: 14px;
+                          border: 0px solid;
+                        "
+                      >
+                        <tr>
+                          <td>
+                            <table
+                              width="90%"
+                              align="center"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              role="presentation"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  style="padding: 10px 0; text-align: right"
+                                  valign="middle"
+                                >
+                                  &nbsp;
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- ==>> END: COLUMN 2 <<== -->
+                    </td>
+                  </tr>
+                  <!-- ==>> END: ROW 8 2 COLUMNS  <<== -->
+
+                  <!-- ==>>  START: ROW 9 2 COLUMNS  <<== -->
+                  <tr>
+                    <td style="padding: 0 0 0px 0">
+                      <!-- ==>> START: COLUMN 1 <<== -->
+                      <table
+                        class="font_14 width_65"
+                        width="74%"
+                        align="left"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="
+                          border-spacing: 0;
+                          border-collapse: collapse;
+                          font-size: 14px;
+                          border: 0px solid;
+                        "
+                      >
+                        <tr>
+                          <td>
+                            <table
+                              width="90%"
+                              align="center"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              role="presentation"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  style="
+                                    padding: 0 0px 5px 0;
+                                    text-align: right;
+                                  "
+                                  valign="middle"
+                                >
+                                  <span>Visa x-0219</span>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- ==>> END: COLUMN 1 <<== -->
+
+                      <!-- ==>> START: COLUMN 2 <<== -->
+                      <table
+                        class="font_14 width_35"
+                        width="26%"
+                        align="right"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="
+                          border-spacing: 0;
+                          border-collapse: collapse;
+                          font-size: 14px;
+                          border: 0px solid;
+                        "
+                      >
+                        <tr>
+                          <td>
+                            <table
+                              class="width_80_USD"
+                              width="90%"
+                              align="center"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              role="presentation"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  style="
+                                    padding: 0 0px 5px 0;
+                                    text-align: right;
+                                    border: 0px solid;
+                                  "
+                                  valign="middle"
+                                >
+                                  <span>$10.00&nbsp;USD</span>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- ==>> END: COLUMN 2 <<== -->
+                    </td>
+                  </tr>
+                  <!-- ==>> END: ROW 9 2 COLUMNS  <<== -->
+
+                  <!-- ==>> START: ROW 10 SPACER 20 <<== -->
+                  <tr>
+                    <td style="padding: 0" height="20" valign="middle"></td>
+                  </tr>
+                  <!-- ==>> END: ROW 10 SPACER 20 <<== -->
+                </table>
+              </td>
+            </tr>
+            <!-- ========>> END: ROW 6 DESCRIPTION TABLE 590PX <<========= -->
+
+            <!-- ========>> START: ROW 7 BUTTON, ISSUE <<========= -->
+            <tr>
+              <td style="background-color: #faf8f5">
+                <table
+                  width="570"
+                  class="width_90"
+                  align="center"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  role="presentation"
+                  style="border-spacing: 0; border-collapse: collapse"
+                >
+                  <!-- ==>> START: ROW 1 BUTTON <<== -->
+                  <tr>
+                    <td style="padding-bottom: 25px" valign="middle">
+                      <table
+                        width="100%"
+                        class="align_center"
+                        align="left"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="border-spacing: 0; border-collapse: collapse"
+                      >
+                        <tr>
+                          <td style="padding: 0">
+                            <a
+                              class="font_16 font_14"
+                              href="#"
+                              style="
+                                text-decoration: none;
+                                padding: 12px 35px;
+                                background-color: #003087;
+                                display: inline-block;
+                                color: #ffffff;
+                                font-size: 18px;
+                                line-height: 22px;
+                                border-radius: 50px;
+                              "
+                              >View or Manage Payment</a
+                            >
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- ==>> END: ROW 1 BUTTON <<== -->
+
+                  <!-- ==>> START: ROW 2 ISSUE <<== -->
+                  <tr>
+                    <td style="padding-bottom: 25px" valign="middle">
+                      <table
+                        width="100%"
+                        class="align_center"
+                        align="left"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="border-spacing: 0; border-collapse: collapse"
+                      >
+                        <tr>
+                          <td style="padding: 0">
+                            <p
+                              style="
+                                padding-bottom: 5px;
+                                margin: 0;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #001435;
+                                word-break: break-word;
+                              "
+                            >
+                              <span
+                                ><strong
+                                  >Issues with this transaction?</strong
+                                ></span
+                              >
+                            </p>
+
+                            <p
+                              style="
+                                padding-bottom: 5px;
+                                margin: 0;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #001435;
+                                word-break: break-word;
+                              "
+                            >
+                              <span
+                                >You have 180 days from the date of the
+                                transaction to open a dispute in the Resolution
+                                Center.</span
+                              >
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- ==>> END: ROW 2 ISSUE <<== -->
+                </table>
+              </td>
+            </tr>
+            <!-- ========>> END: ROW 7 BUTTON, ISSUE <<========= -->
+
+            <!-- ========>> START: ROW 8 LOGO, HR, NAV, SOCIAL <<========= -->
+            <tr>
+              <td style="background-color: #faf8f5">
+                <table
+                  width="100%"
+                  align="center"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  role="presentation"
+                  style="border-spacing: 0; border-collapse: collapse"
+                >
+                  <!-- ==>> START: ROW 1 LOGO <<== -->
+                  <tr>
+                    <td style="padding: 0" valign="middle">
+                      <table
+                        width="50%"
+                        align="left"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="
+                          border-spacing: 0;
+                          border-collapse: collapse;
+                          border: 0px solid;
+                        "
+                      >
+                        <tr>
+                          <td style="padding: 0">
+                            <img
+                              src="https://i.ibb.co/QdPttgH/logo2.png"
+                              alt="PayPal"
+                              width="283"
+                              height="aut"
+                              class="width_100"
+                              style="max-width: 100%; height: auto"
+                            />
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- ==>> END: ROW 1 LOGO <<== -->
+
+                  <!-- ==>> START: ROW 2 HORIZONTAL LINE <<== -->
+                  <tr>
+                    <td style="padding: 0" valign="middle">
+                      <table
+                        width="570"
+                        class="width_90"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="border-spacing: 0; border-collapse: collapse"
+                      >
+                        <tr>
+                          <td style="padding: 0">
+                            <hr
+                              style="border-top: 1px solid #c6c6c6; margin: 0"
+                            />
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- ==>> END: ROW 2 HORIZONTAL LINE <<== -->
+
+                  <!-- ==>> START: ROW 3 NAV <<== -->
+                  <tr>
+                    <td style="padding: 0" valign="middle">
+                      <table
+                        width="570"
+                        class="width_90"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="border-spacing: 0; border-collapse: collapse"
+                      >
+                        <tr>
+                          <td
+                            style="
+                              padding: 10px 0;
+                              font-size: 11px;
+                              line-height: 31px;
+                              color: #001435;
+                            "
+                          >
+                            <!-- ==>> START: HELP & CONTACT <<== -->
+                            <a
+                              href="#"
+                              style="color: #0070e0; text-decoration: none"
+                              >Help & Contact</a
+                            >
+                            <!-- ==>> END: HELP & CONTACT <<== -->
+
+                            <!-- ==>> START: BORDER <<== -->
+                            <span style="padding: 0 5px">|</span>
+                            <!-- ==>> END: BORDER <<== -->
+
+                            <!-- ==>> START: SECURITY <<== -->
+                            <a
+                              href="#"
+                              style="color: #0070e0; text-decoration: none"
+                              >Security</a
+                            >
+                            <!-- ==>> END: SECURITY <<== -->
+
+                            <!-- ==>> START: BORDER <<== -->
+                            <span style="padding: 0 5px">|</span>
+                            <!-- ==>> END: BORDER <<== -->
+
+                            <!-- ==>> START: APPS <<== -->
+                            <a
+                              href="#"
+                              style="color: #0070e0; text-decoration: none"
+                              >Apps</a
+                            >
+                            <!-- ==>> END: APPS <<== -->
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- ==>> END: ROW 3 NAV <<== -->
+
+                  <!-- ==>> START: ROW 4 SOCIAL <<== -->
+                  <tr>
+                    <td style="padding: 0" valign="middle">
+                      <table
+                        width="600"
+                        class="width_90"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="border-spacing: 0; border-collapse: collapse"
+                      >
+                        <tr>
+                          <td style="padding: 20px 0">
+                            <table
+                              width="40%"
+                              class="width_60"
+                              align="left"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              role="presentation"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                                border: 0px solid;
+                              "
+                            >
+                              <tr>
+                                <td style="padding: 0">
+                                  <!-- ==>> START: TWITTER <<== -->
+                                  <table
+                                    width="25%"
+                                    align="left"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    role="presentation"
+                                    style="
+                                      border-spacing: 0;
+                                      border-collapse: collapse;
+                                    "
+                                  >
+                                    <tr>
+                                      <td
+                                        style="padding: 0"
+                                        align="center"
+                                        class="align_left"
+                                      >
+                                        <a href="#"
+                                          ><img
+                                            src="https://i.ibb.co/0htTHW9/twitter.png"
+                                            alt="twitter"
+                                            width="28"
+                                        /></a>
+                                      </td>
+                                    </tr>
+                                  </table>
+
+                                  <!-- ==>> END: TWITTER <<== -->
+
+                                  <!-- ==>> START: FACEBOOK  <<== -->
+                                  <table
+                                    width="25%"
+                                    align="left"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    role="presentation"
+                                    style="
+                                      border-spacing: 0;
+                                      border-collapse: collapse;
+                                    "
+                                  >
+                                    <tr>
+                                      <td
+                                        style="padding: 0"
+                                        align="center"
+                                        class="align_left"
+                                      >
+                                        <a href="#"
+                                          ><img
+                                            src="https://i.ibb.co/kxybPBy/facebook.png"
+                                            alt="facebook"
+                                            width="28"
+                                        /></a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <!-- ==>> END: FACEBOOK <<== -->
+
+                                  <!-- ==>> START: INSTAGRAM <<== -->
+                                  <table
+                                    width="25%"
+                                    align="left"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    role="presentation"
+                                    style="
+                                      border-spacing: 0;
+                                      border-collapse: collapse;
+                                    "
+                                  >
+                                    <tr>
+                                      <td
+                                        style="padding: 0"
+                                        align="center"
+                                        class="align_left"
+                                      >
+                                        <a href="#"
+                                          ><img
+                                            src="https://i.ibb.co/VBy7CJw/ig.png"
+                                            alt="instagram"
+                                            width="28"
+                                        /></a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <!-- ==>> END: INSTAGRAM <<== -->
+
+                                  <!-- ==>> START: LINKEDIN <<== -->
+                                  <table
+                                    width="25%"
+                                    align="left"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    role="presentation"
+                                    style="
+                                      border-spacing: 0;
+                                      border-collapse: collapse;
+                                    "
+                                  >
+                                    <tr>
+                                      <td
+                                        style="padding: 0"
+                                        align="center"
+                                        class="align_left"
+                                      >
+                                        <a href="#"
+                                          ><img
+                                            src="https://i.ibb.co/PxFfhbz/linkedin.png"
+                                            alt="linkedin"
+                                            width="28"
+                                        /></a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <!-- ==>> END: LINKEDIN <<== -->
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- ==>> END: ROW 4 SOCIAL <<== -->
+                </table>
+              </td>
+            </tr>
+            <!-- ========>> END: ROW 8 LOGO, HR, NAV, SOCIAL <<========= -->
+
+            <!-- ========>> START: ROW 9 FOOTER <<========= -->
+            <tr>
+              <td style="padding: 5px 0px 40px; background-color: #faf8f5">
+                <table
+                  width="570"
+                  class="width_90"
+                  align="center"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  role="presentation"
+                  style="
+                    border-spacing: 0;
+                    border-collapse: collapse;
+                    border: 0px solid;
+                  "
+                >
+                  <tr>
+                    <td style="font-size: 11px; line-height: 13px">
+                      <!-- ==>> START: ROW 1 TITLE <<== -->
+                      <table
+                        width="100%"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="border-spacing: 0; border-collapse: collapse"
+                      >
+                        <tr>
+                          <td style="padding: 5px 0">
+                            <p style="margin: 0">
+                              <span
+                                ><strong>ADDITIONAL INFORMATION</strong></span
+                              >
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- ==>> END: ROW 1 TITLE <<== -->
+
+                      <!-- ==>> START: ROW 2 PARAGRAPH <<== -->
+                      <table
+                        width="100%"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="border-spacing: 0; border-collapse: collapse"
+                      >
+                        <tr>
+                          <td style="padding: 5px 0">
+                            <p style="margin: 0">
+                              <span>
+                                PayPal, Inc., as the licensee, is liable for
+                                non-delivery or delayed delivery of your funds.
+                                PayPal, Inc. is licensed to receive and transmit
+                                money under New York law.</span
+                              >
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- ==>> END: ROW 2 PARAGRAPH <<== -->
+
+                      <!-- ==>> START: ROW 3 PARAGRAPH <<== -->
+                      <table
+                        width="100%"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="border-spacing: 0; border-collapse: collapse"
+                      >
+                        <tr>
+                          <td style="padding: 5px 0">
+                            <p style="margin: 0">
+                              <span>
+                                You have the right to cancel a transaction for a
+                                full refund unless your designated recipient has
+                                already received the payment. However, since
+                                most PayPal payments are received within
+                                seconds, you may not be able to cancel your
+                                payment for a full refund once the payment is
+                                made. To determine whether your payment is
+                                eligible for cancellation, log in to PayPal.com,
+                                select the transaction in your transaction
+                                details, and select Cancel, or call PayPal
+                                Customer Service at 888-221-1161. Disputes
+                                related to purchases are addressed in PayPal’s
+                                User Agreement.</span
+                              >
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- ==>> END: ROW 3 PARAGRAPH <<== -->
+
+                      <!-- ==>> START: ROW 4 PARAGRAPH & LINK <<== -->
+                      <table
+                        width="100%"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="border-spacing: 0; border-collapse: collapse"
+                      >
+                        <tr>
+                          <td style="padding: 5px 0">
+                            <p style="margin: 0">
+                              <span>
+                                PayPal is committed to preventing fraudulent
+                                emails. Emails from PayPal will always contain
+                                your full name.
+                                <a
+                                  href="#"
+                                  style="text-decoration: none; color: #0000ee"
+                                  >Learn to identify phishing</a
+                                >
+                              </span>
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- ==>> END: ROW 4 PARAGRAPH & LINK <<== -->
+
+                      <!-- ==>> START: ROW 5 PARAGRAPH & LINK <<== -->
+                      <table
+                        width="100%"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="border-spacing: 0; border-collapse: collapse"
+                      >
+                        <tr>
+                          <td style="padding: 5px 0">
+                            <p style="margin: 0">
+                              <span>
+                                Please don't reply to this email. To get in
+                                touch with us, click
+                                <a
+                                  href="#"
+                                  style="text-decoration: none; color: #0000ee"
+                                  >Help & Contact</a
+                                >
+                              </span>
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- ==>> END: ROW 5 PARAGRAPH & LINK <<== -->
+
+                      <!-- ==>> START: ROW 6 PARAGRAPH  <<== -->
+                      <table
+                        width="100%"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="border-spacing: 0; border-collapse: collapse"
+                      >
+                        <tr>
+                          <td style="padding: 5px 0">
+                            <p style="margin: 0">
+                              <span>
+                                PayPal Customer Service can be reached at
+                                888-221-1161.
+                              </span>
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- ==>> END: ROW 6 PARAGRAPH  <<== -->
+
+                      <!-- ==>> START: ROW 7 PARAGRAPH & LINK <<== -->
+                      <table
+                        width="100%"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="border-spacing: 0; border-collapse: collapse"
+                      >
+                        <tr>
+                          <td style="padding: 5px 0">
+                            <p style="margin: 0">
+                              <span>
+                                Not sure why you received this email?
+                                <a
+                                  href="#"
+                                  style="text-decoration: none; color: #0000ee"
+                                  >Learn more</a
+                                >
+                              </span>
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- ==>> END: ROW 7 PARAGRAPH & LINK <<== -->
+
+                      <!-- ==>> START: ROW 8 PARAGRAPH  <<== -->
+                      <table
+                        width="100%"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="border-spacing: 0; border-collapse: collapse"
+                      >
+                        <tr>
+                          <td style="padding: 5px 0">
+                            <p style="margin: 0">
+                              <span>
+                                Copyright © 1999-2023 PayPal, Inc. All rights
+                                reserved. PayPal is located at 2211 N. First
+                                St., San Jose, CA 95131.
+                              </span>
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- ==>> END: ROW 8 PARAGRAPH  <<== -->
+
+                      <!-- ==>> START: ROW 9 PARAGRAPH  <<== -->
+                      <table
+                        width="100%"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="border-spacing: 0; border-collapse: collapse"
+                      >
+                        <tr>
+                          <td style="padding: 5px 0">
+                            <p style="margin-top: 0px; margin-bottom: 11px">
+                              <span>
+                                PayPal RT000016:en_US(en-US):1.5.0:31812db14bf74
+                              </span>
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- ==>> END: ROW 9 PARAGRAPH  <<== -->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- ========>> END: ROW 9 FOOTER <<========= -->
+          </table>
+          <!-- ========>> END: EMAIL CONTAINER<<========= -->
+        </td>
+      </tr>
+    </table>
+    <!-- ========>> END: EMAIL <<========= -->
+  </body>
+</html>
