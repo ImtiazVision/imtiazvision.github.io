@@ -1,0 +1,28 @@
+/* Menu */
+
+.delo-menu {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.delo-menu-color {
+  color: #F75022;
+}
+
+/* Skills Section */
+
+.delo-about-icon {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 8px;
+}
+
+.delo-twitter-icon {
+  width: 30px;
+}
+
+.imtiaz-linkedin-icon {
+  width: 30px;
+}
